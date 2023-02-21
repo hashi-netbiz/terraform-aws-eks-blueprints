@@ -26,7 +26,7 @@ data "aws_availability_zones" "available" {}
 
 locals {
   name   = basename(path.cwd)
-  region = "us-west-2"
+  region = "us-east-1"
 
   cluster_version = "1.24"
 
@@ -67,8 +67,8 @@ module "eks" {
       instance_types = ["m5.large"]
 
       min_size     = 3
-      max_size     = 10
-      desired_size = 5
+      max_size     = 5
+      desired_size = 3
     }
   }
 
