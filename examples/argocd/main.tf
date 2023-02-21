@@ -115,9 +115,9 @@ module "eks_blueprints_kubernetes_addons" {
       add_on_application = true
     }
     workloads = {
-      path               = "envs/dev"
-      repo_url           = "https://github.com/aws-samples/eks-blueprints-workloads.git"
-      add_on_application = false
+      #path               = "envs/dev"
+      repo_url           = "https://github.com/hashi-netbiz/eks-test-workload.git"
+      #add_on_application = false
     }
   }
 
